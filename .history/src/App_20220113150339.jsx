@@ -7,7 +7,9 @@ import Home from "./components/Home.jsx"
 import Database from "./components/Database.jsx"
 import Create from "./components/Create.jsx"
 import CatProfile from "./components/CatProfile.jsx"
-import Login from "./components/Login.jsx"
+import Login from "./components/CatProfile.jsx"
+
+
 
 const App = () => {
   return (

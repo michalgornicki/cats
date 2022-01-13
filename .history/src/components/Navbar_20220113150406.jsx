@@ -20,7 +20,7 @@ const Database = () => {
     </Nav>
     <Nav className="">
       <Nav.Link><Link className="link-unstyled text-white" to="/Login">Zarejestruj konto</Link></Nav.Link>
-      <Nav.Link><Link className="link-unstyled text-white" to="/Login">Zaloguj się</Link></Nav.Link>
+      <Nav.Link><Link className="link-unstyled text-white" to="/Create">Zaloguj się</Link></Nav.Link>
     </Nav>
     </Container>
   </Navbar>
