@@ -20,8 +20,8 @@ const Navigation = () => {
 </Container>
 
 <Navbar className="bg-green mb-4">
-    <Container className="d-flex justify-content-between">
-    <Nav className="w-50 d-flex justify-content-evenly">
+    <Container className="d-flex justify-content-center">
+    <Nav className="w-50 d-flex justify-content-between">
       <Nav.Link><Link className="link-unstyled text-white" to="/">Znajdź kota</Link></Nav.Link>
       <Nav.Link><Link className="link-unstyled text-white" to="/Database">Przeglądaj bazę</Link></Nav.Link>
       {isAuthenticated ? 
