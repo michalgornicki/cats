@@ -27,7 +27,8 @@ const Navigation = () => {
       {isAuthenticated ?
       <div className="d-flex flex-row">
       <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/">Ulubione koty</Link></Nav.Link>
+      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Moje </Link></Nav.Link>
+      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
       </div>
       : ""}
     </Nav>

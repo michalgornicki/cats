@@ -25,10 +25,11 @@ const Navigation = () => {
       <Nav.Link><Link className="link-unstyled text-white mx-3" to="/">Znajdź kota</Link></Nav.Link>
       <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Database">Przeglądaj bazę</Link></Nav.Link>
       {isAuthenticated ?
-      <div className="d-flex flex-row">
+      <span>
       <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/">Ulubione koty</Link></Nav.Link>
-      </div>
+      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
+      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
+      </span>
       : ""}
     </Nav>
     <Nav className="">

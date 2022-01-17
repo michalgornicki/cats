@@ -13,9 +13,10 @@ const Login = () => {
         <Button onClick={() => loginWithRedirect()} className=" m-1" variant="success">
           Zaloguj się
         </Button>
-      ) : (
+      ) : 
+      (
         <div>
-          <Button onClick={""} className=" m-1" variant="success">
+          <Button onClick={() => logout({ returnTo: window.location.origin })} className=" m-1" variant="success">
             Moje konto
           </Button>
           <Button onClick={() => logout({ returnTo: window.location.origin })} className=" m-1" variant="success">

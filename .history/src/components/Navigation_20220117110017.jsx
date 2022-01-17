@@ -21,14 +21,11 @@ const Navigation = () => {
 
 <Navbar className="bg-green mb-4">
     <Container className="d-flex justify-content-between">
-    <Nav className="">
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/">Znajdź kota</Link></Nav.Link>
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Database">Przeglądaj bazę</Link></Nav.Link>
-      {isAuthenticated ?
-      <div className="d-flex flex-row">
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
-      <Nav.Link><Link className="link-unstyled text-white mx-3" to="/">Ulubione koty</Link></Nav.Link>
-      </div>
+    <Nav className="w-50 d-flex">
+      <Nav.Link><Link className="link-unstyled text-white" to="/">Znajdź kota</Link></Nav.Link>
+      <Nav.Link><Link className="link-unstyled text-white" to="/Database">Przeglądaj bazę</Link></Nav.Link>
+      {isAuthenticated ? 
+      <Nav.Link><Link className="link-unstyled text-white" to="/Create">Stwórz ogłoszenie</Link></Nav.Link>
       : ""}
     </Nav>
     <Nav className="">
