@@ -1,0 +1,19 @@
+[{
+  "id": "1",
+  "name": "./photos/1.jpg",
+  "age": "./photos/1.jpg",
+  "color": "./photos/1.jpg",
+
+  "image": "./photos/1.jpg"
+
+},
+{
+  "id": "2",
+  "title": "Dysk SSD Goodram 1TB",
+  "availability": "dostawa w ciągu 5 dni",
+  "price": "419.99 zł",
+  "image": "2.jpg",
+  "category": "disk",
+  "description": "Kingston® ValueRAM® to niezwykle niezawodne i wydajne pamięci RAM. Kupowane przez klientów, którzy znają dokładne dane techniczne pamięci, których potrzebują. Pamięci ValueRAM są w pełni zgodne ze specyfikacjami JEDEC i w 100 procentach przetestowane. Zapewniają wielokrotnie nagradzaną wydajność i legendarną niezawodność pamięci Kingston. Jeżeli masz wysokie wymagania, potrzebujesz pamięci Kingston ValueRAM."
+}
+]

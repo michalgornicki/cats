@@ -1,0 +1,33 @@
+[{
+  "id": "1",
+  "name": "Minerwa",
+  "age": "5 lat",
+  "color": "szary",
+  "image": "./photos/1.jpg",
+  "sex": "kotka"
+},
+{
+  "id": "2",
+  "name": "Minerwa",
+  "age": "5 lat",
+  "color": "szary",
+  "image": "./photos/1.jpg",
+  "sex": "kotka"
+},
+{
+  "id": "1",
+  "name": "Minerwa",
+  "age": "5 lat",
+  "color": "szary",
+  "image": "./photos/1.jpg",
+  "sex": "kotka"
+},
+{
+  "id": "1",
+  "name": "Minerwa",
+  "age": "5 lat",
+  "color": "szary",
+  "image": "./photos/1.jpg",
+  "sex": "kotka"
+}
+]
