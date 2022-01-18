@@ -9,7 +9,7 @@ const Login = () => {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
 
-  console.log(user)
+  console.log(u)
 
   return (
     <div>

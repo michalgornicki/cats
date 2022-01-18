@@ -7,7 +7,7 @@ import Home from "./components/Home.jsx"
 import Database from "./components/Database.jsx"
 import Create from "./components/Create.jsx"
 import CatProfile from "./components/CatProfile.jsx"
-import Dashboard from "./components/Dashboard.jsx"
+import CatProfile from "./components/CatProfile.jsx"
 
 
 const App = () => {

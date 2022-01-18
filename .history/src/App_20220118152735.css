@@ -91,11 +91,9 @@
 
 .user-photo-large{
     border-radius: 100%;
-    height: 120px;
+    height: 250px;
     display: block;
     margin: auto;
-    margin-top: 2vmin;
-
 }
 
 #cat-box2{
@@ -117,8 +115,4 @@
 
 .fav:hover{
     filter: opacity(1);
-}
-
-.display-7{
-    font-size: 1.2rem;
 }

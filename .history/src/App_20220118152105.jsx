@@ -7,7 +7,6 @@ import Home from "./components/Home.jsx"
 import Database from "./components/Database.jsx"
 import Create from "./components/Create.jsx"
 import CatProfile from "./components/CatProfile.jsx"
-import Dashboard from "./components/Dashboard.jsx"
 
 
 const App = () => {
@@ -21,7 +20,7 @@ const App = () => {
           <Route path="/Database" element={<Database />} />
           <Route path="/Create" element={<Create />} />
           <Route path="/CatProfile" element={<CatProfile />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Dashboard" element={<CatProfile />} />
         </Routes>
 
       </div>

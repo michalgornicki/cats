@@ -9,8 +9,6 @@ const Login = () => {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
 
-  console.log(user)
-
   return (
     <div>
       {!isAuthenticated ? (
@@ -21,7 +19,7 @@ const Login = () => {
         <div>
 
           <img className="user-photo" src={user.picture} alt={user.name} />
-          <Link className="link-unstyled text-white mx-3" to="/Dashboard">
+          <Link className="link-unstyled text-white mx-3" to="/Create">
           <Button onClick={""} className=" m-1" variant="success">
             Moje konto
           </Button>

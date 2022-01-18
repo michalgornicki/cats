@@ -94,7 +94,7 @@
     height: 120px;
     display: block;
     margin: auto;
-    margin-top: 2vmin;
+    margin-top: 7vmin;
 
 }
 
@@ -117,8 +117,4 @@
 
 .fav:hover{
     filter: opacity(1);
-}
-
-.display-7{
-    font-size: 1.2rem;
 }

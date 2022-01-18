@@ -9,8 +9,6 @@ const Login = () => {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
 
-  console.log(user)
-
   return (
     <div>
       {!isAuthenticated ? (
