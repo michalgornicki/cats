@@ -1,0 +1,71 @@
+[{
+  "id": "1",
+  "name": "Minerwa",
+  "age": 5,
+  "color": "szary",
+  "image": "https://i.postimg.cc/c1VV4ShW/1.jpg",
+  "sex": "kotka",
+  "region": "Mazowieckie",
+  "city": "Warszawa"
+},
+{
+  "id": "2",
+  "name": "Merlin",
+  "age": 3,
+  "color": "czarny",
+  "image": "https://i.postimg.cc/T3xFgJBH/2.jpg",
+  "sex": "kot",
+  "region": "Lubelskie",
+  "city": "Biała Podlaska"
+},
+{
+  "id": "3",
+  "name": "Roland",
+  "age": 6,
+  "color": "rudy",
+  "image": "https://i.postimg.cc/sgJ8cZrf/3.jpg",
+  "sex": "kocur",
+  "region": "Łódzkie",
+  "city": "Łódź"
+},
+{
+  "id": "4",
+  "name": "Astrid",
+  "age": 2,
+  "color": "szary",
+  "image": "https://i.postimg.cc/ZKpXWMsd/4.jpg",
+  "sex": "kotka",
+  "region": "Pomorskie",
+  "city": "Gdynia"
+},
+{
+  "id": "5",
+  "name": "Sven",
+  "age": 7,
+  "color": "czarny",
+  "image": "https://i.postimg.cc/SKNPtNS6/5.jpg",
+  "sex": "kocur",
+  "region": "Małopolskie",
+  "city": "Kraków"
+},
+{
+  "id": "5",
+  "name": "Sigurd",
+  "age": 5,
+  "color": "czarny",
+  "image": "https://i.postimg.cc/6qRbG8cX/6.jpg",
+  "sex": "kocur",
+  "region": "Małopolskie",
+  "city": "Kraków"
+},
+{
+  "id": "5",
+  "name": "Ansena",
+  "age": 3,
+  "color": "czarny",
+  "image": "https://i.postimg.cc/k4Lh4Qxs/7.jpg",
+  "sex": "kotka",
+  "region": "Małopolskie",
+  "city": "Wieliczka"
+}
+]
