@@ -13,8 +13,8 @@ const Home = () => {
   const [minAge, setMinAge] = useState([0, 50]);
 
   const regionCheck = (e) => {
-    if (e.target.value === "Polska") {setRegion(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);}
-    else {setRegion(e.target.value);}
+    if (e.target.value === "Polska"
+    setRegion(e.target.value);
   };
 
   const toggleAge = () => {
