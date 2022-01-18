@@ -60,7 +60,7 @@ const Database = () => {
         </Container>
       </Container>
 
-      <Container className="checkboxes w-25">
+      <Container className="checkboxes ">
         <form className="d-flex flex-column m-3">
             <div className="text-uppercase">Lokalizacja</div>
           <div><input type="radio" onClick={() =>setRegion(["Mazowieckie" , "Podlaskie" , "Lubelskie" , "Pomorskie" , "Małopolskie", "Łódzkie"])} id="region1" name="region" value="Mazowieckie" />

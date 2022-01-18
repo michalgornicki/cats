@@ -99,13 +99,7 @@
 
 .fav{
     position: absolute;
-    width: 40px;
+    width: 50px;
     right: 20px;
     bottom: 10px;
-    filter: opacity(0.5);
-    transition: 0.5s;
-}
-
-.fav:hover{
-    filter: opacity(1);
 }

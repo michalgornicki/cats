@@ -99,10 +99,7 @@ const Home = () => {
           {data.map((item) => (
             <Card className="card">
               <Link className="link-unstyled" to="/CatProfile">
-              <div className="position-relative">
-              <Card.Img className="card-photo" variant="top" src={item.image} />
-              <img className="fav" src={fav} alt="" />
-              </div>
+                <Card.Img className="card-photo" variant="top" src={item.image} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
                   <Card.Text>{item.city + ", " + item.region}</Card.Text>

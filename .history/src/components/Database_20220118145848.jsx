@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import data from "../data";
-import fav from "../heart.png";
 
 const Database = () => {
 
@@ -44,10 +43,7 @@ const Database = () => {
         .filter((item) => Sex.includes(item.sex))
         .map((item) => 
       <Card className="card">
-              <div className="position-relative">
-              <Card.Img className="card-photo" variant="top" src={item.image} />
-              <img className="fav" src={fav} alt="" />
-              </div>
+      <Card.Img className="card-photo" variant="top" src={item.image} />
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>
@@ -60,59 +56,59 @@ const Database = () => {
         </Container>
       </Container>
 
-      <Container className="checkboxes w-25">
+      <Container className="checkboxes">
         <form className="d-flex flex-column m-3">
-            <div className="text-uppercase">Lokalizacja</div>
+            <div className="div">Lokalizacja</div>
           <div><input type="radio" onClick={() =>setRegion(["Mazowieckie" , "Podlaskie" , "Lubelskie" , "Pomorskie" , "Małopolskie", "Łódzkie"])} id="region1" name="region" value="Mazowieckie" />
-          <label className="mx-1" for="vehicle1">Wszystkie</label>
+          <label for="vehicle1"> Wszystkie</label>
           </div> 
           <div><input type="radio" onClick={regionCheck} id="region1" name="region" value="Mazowieckie" />
-          <label className="mx-1" for="vehicle1">Mazowieckie</label>
+          <label for="vehicle1"> Mazowieckie</label>
           </div>
           <div><input type="radio" onClick={regionCheck} id="region2" name="region" value="Łódzkie" />
-          <label className="mx-1" for="vehicle1">Łódzkie</label>
+          <label for="vehicle1"> Łódzkie</label>
           </div>
           <div><input type="radio" onClick={regionCheck} id="region3" name="region" value="Lubelskie" />
-          <label className="mx-1" for="vehicle1">Lubelskie</label>
+          <label for="vehicle1"> Lubelskie</label>
           </div>
           <div><input type="radio" onClick={regionCheck} id="region3" name="region" value="Pomorskie" />
-          <label className="mx-1" for="vehicle1">Pomorskie</label>
+          <label for="vehicle1"> Pomorskie</label>
           </div>
           <div><input type="radio" onClick={regionCheck} id="region3" name="region" value="Małopolskie" />
-          <label className="mx-1" for="vehicle1">Małopolskie</label>
+          <label for="vehicle1"> Małopolskie</label>
           </div>
  
         </form>
 
         <form className="d-flex flex-column m-3">
-            <div className="text-uppercase">Wiek</div>
+            <div className="div">Wiek</div>
           <div><input type="radio" onClick={() => setMinAge([0, 50])} id="age1" name="age" value="baby" />
-          <label  className="mx-1"for="vehicle1">Wszystkie</label>
+          <label for="vehicle1">Wszystkie</label>
           </div>
           <div><input type="radio" onClick={() => setMinAge([0, 2])} id="age1" name="age" value="baby" />
-          <label  className="mx-1"for="vehicle1">0-2 lata</label>
+          <label for="vehicle1">0-2 lata</label>
           </div>
           <div><input type="radio" onClick={() => setMinAge([3, 5])} id="age2" name="age" value="young" />
-          <label  className="mx-1"for="vehicle1">3-5 lat</label>
+          <label for="vehicle1">3-5 lat</label>
           </div>
           <div><input type="radio" onClick={() => setMinAge([6, 10])} id="age3" name="age" value="adult" />
-          <label  className="mx-1"for="vehicle1">6-10 lat</label>
+          <label for="vehicle1">6-10 lat</label>
           </div>
           <div><input type="radio" onClick={() => setMinAge([11, 50])} id="age4" name="age" value="older" />
-          <label  className="mx-1"for="vehicle1">11+ lat</label>
+          <label for="vehicle1">11+ lat</label>
           </div>
         </form>
 
         <form className="d-flex flex-column m-3">
-            <div className="text-uppercase">Płeć</div>
+            <div className="div">Płeć</div>
           <div><input type="radio" onClick={() => setSex(["kotek" , "kotka"])} id="sex" name="vehicle1" value="kot" />
-          <label  className="mx-1"for="vehicle1">Obie płcie</label>
+          <label for="vehicle1">Obie płcie</label>
           </div>
           <div><input type="radio" onClick={sexCheck} id="sex" name="vehicle1" value="kotek" />
-          <label  className="mx-1"for="vehicle1">kotek</label>
+          <label for="vehicle1">kotek</label>
           </div>
           <div><input type="radio" onClick={sexCheck} id="sex" name="vehicle1" value="kotka" />
-          <label  className="mx-1"for="vehicle1">Kotka</label>
+          <label for="vehicle1">Kotka</label>
           </div>
         </form>
       </Container>

@@ -103,9 +103,8 @@
     right: 20px;
     bottom: 10px;
     filter: opacity(0.5);
-    transition: 0.5s;
 }
 
-.fav:hover{
-    filter: opacity(1);
+.fav{
+    filter: opacity(1)
 }

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import data from "../data";
-import fav from "../heart.png";
 
 const Database = () => {
 
@@ -44,7 +43,7 @@ const Database = () => {
         .filter((item) => Sex.includes(item.sex))
         .map((item) => 
       <Card className="card">
-              <div className="position-relative">
+      <div className="position-relative">
               <Card.Img className="card-photo" variant="top" src={item.image} />
               <img className="fav" src={fav} alt="" />
               </div>
@@ -60,7 +59,7 @@ const Database = () => {
         </Container>
       </Container>
 
-      <Container className="checkboxes w-25">
+      <Container className="checkboxes">
         <form className="d-flex flex-column m-3">
             <div className="text-uppercase">Lokalizacja</div>
           <div><input type="radio" onClick={() =>setRegion(["Mazowieckie" , "Podlaskie" , "Lubelskie" , "Pomorskie" , "Małopolskie", "Łódzkie"])} id="region1" name="region" value="Mazowieckie" />

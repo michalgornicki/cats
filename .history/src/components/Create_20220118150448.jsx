@@ -48,7 +48,7 @@ const Create = () => {
 
         <div className="d-flex flex-column">
         <label for="fname">Stwórz krótki opis kota</label>
-        <textarea className="w-75 height-20vh text-wrap" type="text" id="fname" name="firstname" placeholder="Napisz historię kota.."/>
+        <input className="w-75 height 20v" type="text" id="fname" name="firstname" placeholder="Napisz historię kota.."/>
         </div>
         </Card.Body>
         <Button className="my-3 w-50" variant="success">

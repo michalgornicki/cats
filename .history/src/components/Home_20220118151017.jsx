@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import catHome from "../catHome.png";
 import data from "../data";
-import fav from "../heart.png";
+import data from "../data";
 
 const Home = () => {
   const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
@@ -99,10 +99,7 @@ const Home = () => {
           {data.map((item) => (
             <Card className="card">
               <Link className="link-unstyled" to="/CatProfile">
-              <div className="position-relative">
-              <Card.Img className="card-photo" variant="top" src={item.image} />
-              <img className="fav" src={fav} alt="" />
-              </div>
+                <Card.Img className="card-photo" variant="top" src={item.image} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
                   <Card.Text>{item.city + ", " + item.region}</Card.Text>
@@ -123,7 +120,7 @@ const Home = () => {
             <Card className="card">
               <div className="position-relative">
               <Card.Img className="card-photo" variant="top" src={item.image} />
-              <img className="fav" src={fav} alt="" />
+              <img src="" alt="" />
               </div>
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
