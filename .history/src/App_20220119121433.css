@@ -132,11 +132,6 @@
     100% {filter: opacity(1);}
 }
 
-.card-hover{
-    background-color: rgb(255, 255, 255);
-    transition: 0.2s;
-  }
-
 .card-hover:hover{
-  background-color: rgb(240, 240, 240);
+
 }

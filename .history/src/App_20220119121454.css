@@ -133,10 +133,9 @@
 }
 
 .card-hover{
-    background-color: rgb(255, 255, 255);
-    transition: 0.2s;
+    background-color: gray;
   }
 
 .card-hover:hover{
-  background-color: rgb(240, 240, 240);
+  background-color: gray;
 }

@@ -132,11 +132,11 @@
     100% {filter: opacity(1);}
 }
 
-.card-hover{
-    background-color: rgb(255, 255, 255);
-    transition: 0.2s;
-  }
+.zooming{
+    animation: zoom 1.5s;
+}
 
-.card-hover:hover{
-  background-color: rgb(240, 240, 240);
+@keyframes zoom{
+    0% {transform: scale(1);}
+    100% {filter: scale(1.1);}
 }

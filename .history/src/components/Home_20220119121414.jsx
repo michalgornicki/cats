@@ -122,7 +122,7 @@ const Home = () => {
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
           .filter((item) => Sex.includes(item.sex))
           .map((item) => (
-            <Card className="card card-hover">
+            <Card className="card">
                <Link className="link-unstyled" to={"/profiles/" + item.id}>
               <div className="position-relative">
               <Card.Img className="card-photo" variant="top" src={item.image} />

@@ -99,7 +99,7 @@ const Home = () => {
         <div id="cat-box1">
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
           {data.map((item) => (
-            <Card className="card card-hover">
+            <Card className="card">
               <Link className="link-unstyled" to={"/profiles/" + item.id}>
               <div className="position-relative">
               <Card.Img className="card-photo" variant="top" src={item.image} />
@@ -122,7 +122,7 @@ const Home = () => {
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
           .filter((item) => Sex.includes(item.sex))
           .map((item) => (
-            <Card className="card card-hover">
+            <Card className="card ">
                <Link className="link-unstyled" to={"/profiles/" + item.id}>
               <div className="position-relative">
               <Card.Img className="card-photo" variant="top" src={item.image} />
