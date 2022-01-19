@@ -10,7 +10,7 @@ ReactDOM.render(
 <Auth0Provider
     domain="dev-vsmi61io.us.auth0.com"
     clientId="Da5qawwo5IJU5rOFgpun7cPVVkv4j66S"
-    redirectUri={"https://michalgornicki.github.io/cats"}
+    redirectUri={https://michalgornicki.github.io/cats}
   >
     <App />
   </Auth0Provider>,
