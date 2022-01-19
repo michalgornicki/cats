@@ -9,6 +9,7 @@ import fav from "../heart.png";
 
 const Home = () => {
 
+
   const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
@@ -97,7 +98,7 @@ const Home = () => {
       </div>
 
         <div id="cat-box1">
-        <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
+        <Container className="w-75 mx-5 my-4 d-flex flex-wrap">
           {data.map((item) => (
             <Card className="card">
               <Link className="link-unstyled" to={"/profiles/" + item.id}>
@@ -116,7 +117,7 @@ const Home = () => {
         </div>
 
       <div id="cat-box2">
-      <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
+      <Container className="w-75 mx-5 my-4 d-flex flex-wrap">
         {data
           .filter((item) => Region.includes(item.region))
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])

@@ -123,11 +123,11 @@
     font-size: 1.2rem;
 }
 
-.fading{
-    animation: fade 1.5s;
+.fade{
+    transition: fade 1s;
 }
 
 @keyframes fade{
-    0% {filter: opacity(0);}
-    100% {filter: opacity(1);}
+    0%
+    0%
 }

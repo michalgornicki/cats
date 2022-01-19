@@ -124,7 +124,7 @@
 }
 
 .fading{
-    animation: fade 1.5s;
+    transition: fade 1s;
 }
 
 @keyframes fade{

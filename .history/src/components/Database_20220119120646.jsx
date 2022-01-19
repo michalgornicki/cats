@@ -38,7 +38,7 @@ const Database = () => {
         <div className="display-6">
           Koty czekające na nowy dom
         </div>
-        <Container className="w-75 my-4 mx-auto d-flex flex-wrap fading">
+        <Container className="w-75 my-4 mx-auto d-flex flex-wrap ">
 
         {data
         .filter((item) => Region.includes(item.region))

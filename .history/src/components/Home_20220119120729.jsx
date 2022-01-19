@@ -116,7 +116,7 @@ const Home = () => {
         </div>
 
       <div id="cat-box2">
-      <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
+      <Container className="w-75 mx-5 my-4 d-flex flex-wrap ">
         {data
           .filter((item) => Region.includes(item.region))
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
