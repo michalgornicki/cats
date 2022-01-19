@@ -31,11 +31,11 @@ const Cat3 = () => {
           <Card.Img className="card-profile-photo-sm" variant="top" src={data[2].image} />
         </div>
         <Card.Body>
-          <div className="display-6 my-3">O mnie:</div>
+          <div className="display-6">O mnie:</div>
           <div className="div">Wiek: {data[2].age} lat</div>
           <div className="div">Płeć: {data[2].sex}</div>
           <div className="div">Kolor sierści: {data[2].color}</div>
-          <div className="display-6 my-3">Moja historia:</div>
+          <div className="display-6">Moja historia:</div>
           <div className="div">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor

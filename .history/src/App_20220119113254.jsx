@@ -21,7 +21,7 @@ import Cat10 from "./components/profiles/10.jsx"
 import Cat11 from "./components/profiles/11.jsx"
 import Cat12 from "./components/profiles/12.jsx"
 import Cat13 from "./components/profiles/13.jsx"
-import data from "./data";
+import data from "../data";
 
 
 
