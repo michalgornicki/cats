@@ -9,8 +9,8 @@ import fav from "../heart.png";
 
 const Home = () => {
 
-  console.log(window.location.origin)
 
+  
   const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
