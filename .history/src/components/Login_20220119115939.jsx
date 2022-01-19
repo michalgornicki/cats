@@ -26,7 +26,7 @@ const Login = () => {
             Moje konto
           </Button>
           </Link>
-          <Button onClick={() => logout({ returnTo: "https://michalgornicki.github.io/cats" })} className=" m-1" variant="success">
+          <Button onClick={() => logout({ returnTo: "window.location.origin" })} className=" m-1" variant="success">
             Wyloguj
           </Button>
         </div>
