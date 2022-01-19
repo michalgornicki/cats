@@ -1,0 +1,140 @@
+[{
+  "id": "1",
+  "name": "Minerwa",
+  "age": 1,
+  "color": "szary",
+  "image": "https://i.postimg.cc/c1VV4ShW/1.jpg",
+  "sex": "kotka",
+  "region": "Mazowieckie",
+  "city": "Warszawa",
+  "phone": "662-848-252"
+},
+{
+  "id": "2",
+  "name": "Merlin",
+  "age": 7,
+  "color": "szary",
+  "image": "https://i.postimg.cc/T3xFgJBH/2.jpg",
+  "sex": "kotek",
+  "region": "Lubelskie",
+  "city": "Biała Podlaska",
+  "phone": "356-164-134"
+},
+{
+  "id": "3",
+  "name": "Roland",
+  "age": 6,
+  "color": "rudy",
+  "image": "https://i.postimg.cc/sgJ8cZrf/3.jpg",
+  "sex": "kotek",
+  "region": "Łódzkie",
+  "city": "Łódź",
+  "phone": "572-124-572"
+},
+{
+  "id": "4",
+  "name": "Astrid",
+  "age": 3,
+  "color": "biały",
+  "image": "https://i.postimg.cc/ZKpXWMsd/4.jpg",
+  "sex": "kotka",
+  "region": "Pomorskie",
+  "city": "Gdynia",
+  "phone": "524-642-452"
+},
+{
+  "id": "5",
+  "name": "Sven",
+  "age": 7,
+  "color": "szary",
+  "image": "https://i.postimg.cc/SKNPtNS6/5.jpg",
+  "sex": "kotek",
+  "region": "Małopolskie",
+  "city": "Kraków",
+  "phone": "247-247-632"
+},
+{
+  "id": "6",
+  "name": "Sigurd",
+  "age": 5,
+  "color": "szary",
+  "image": "https://i.postimg.cc/6qRbG8cX/6.jpg",
+  "sex": "kotek",
+  "region": "Małopolskie",
+  "city": "Kraków",
+  "phone": "652-247-472"
+},
+{
+  "id": "7",
+  "name": "Ansena",
+  "age": 3,
+  "color": "biały",
+  "image": "https://i.postimg.cc/k4Lh4Qxs/7.jpg",
+  "sex": "kotka",
+  "region": "Małopolskie",
+  "city": "Wieliczka",
+  "phone": "458-147-347"
+},
+{
+  "id": "8",
+  "name": "Bergvid",
+  "age": 5,
+  "color": "szary",
+  "image": "https://i.postimg.cc/4dT9ZmQn/8.jpg",
+  "sex": "kotek",
+  "region": "Mazowieckie",
+  "city": "Płock",
+  "phone": "579-138-474"
+},
+{
+  "id": "9",
+  "name": "Freyja",
+  "age": 4,
+  "color": "biały",
+  "image": "https://i.postimg.cc/C5hnBXtg/9.jpg",
+  "sex": "kotka",
+  "region": "Pomorskie",
+  "city": "Gdańsk",
+  "phone": "662-848-252"
+},
+{
+  "id": "10",
+  "name": "Hrefna",
+  "age": 1,
+  "color": "szary",
+  "image": "https://i.postimg.cc/tJBZhDQV/10.jpg",
+  "sex": "kotka",
+  "region": "Lubelskie",
+  "city": "Lublin"
+},
+{
+  "id": "11",
+  "name": "Lars",
+  "age": 8,
+  "color": "biały",
+  "image": "https://i.postimg.cc/FRgJKNTp/11.jpg",
+  "sex": "kotek",
+  "region": "Łódzkie",
+  "city": "Łódź"
+},
+{
+  "id": "12",
+  "name": "Thora",
+  "age": 12,
+  "color": "szary",
+  "image": "https://i.postimg.cc/T20DM2LY/12.jpg",
+  "sex": "kotka",
+  "region": "Mazowieckie",
+  "city": "Modlin"
+},
+{
+  "id": "13",
+  "name": "Mads",
+  "age": 2,
+  "color": "biały",
+  "image": "https://i.postimg.cc/FsKJ9t3b/13.jpg",
+  "sex": "kotek",
+  "region": "Mazowieckie",
+  "city": "Warszawa"
+}
+]
