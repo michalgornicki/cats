@@ -111,7 +111,7 @@ const Home = () => {
               <Link className="link-unstyled" to={"/profiles/" + item.id}>
               <Card.Img className="card-photo" variant="top" src={item.image} />
               </Link>
-              <img className="fav" onClick={() => Favs.includes(item.name) ? "" : setFavs(Favs + " " + item.name)} src={fav} alt="" />
+              <img className="fav" onClick={() => Favs.includes(item.name) ? array.splice(array.indexOf('B'), 1); : setFavs(Favs + " " + item.name)} src={fav} alt="" />
               </div>
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>

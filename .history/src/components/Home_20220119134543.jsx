@@ -13,10 +13,8 @@ const Home = () => {
   const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
- 
-  const[Favs, setFavs] = useState([]);
 
-  console.log(Favs)
+
 
   const regionCheck = (e) => {
     if (e.target.value === "Polska") {setRegion(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);}
@@ -52,11 +50,11 @@ const Home = () => {
   const Find = () => {
     const catbox1 = document.getElementById("cat-box1");
     const catbox2 = document.getElementById("cat-box2");
-    const catboxName = document.getElementById("cat-box-name");
+    document.getElementById("cat-box-name").innerHTML = "Znalezione koty:";
 
     catbox1.style.display = "none";
     catbox2.style.display = "block";
-    catboxName.innerHTML = "Znalezione koty:";
+    
   };
 
   return (
@@ -111,7 +109,7 @@ const Home = () => {
               <Link className="link-unstyled" to={"/profiles/" + item.id}>
               <Card.Img className="card-photo" variant="top" src={item.image} />
               </Link>
-              <img className="fav" onClick={() => Favs.includes(item.name) ? "" : setFavs(Favs + " " + item.name)} src={fav} alt="" />
+              <img className="fav" onClick={""} src={fav} alt="" />
               </div>
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>

@@ -6,7 +6,6 @@ import Navigation from "./components/Navigation.jsx"
 import Home from "./components/Home.jsx"
 import Database from "./components/Database.jsx"
 import Create from "./components/Create.jsx"
-import Favourite from "./components/Favourite.jsx"
 import Dashboard from "./components/Dashboard.jsx"
 import Cat1 from "./components/profiles/1.jsx"
 import Cat2 from "./components/profiles/2.jsx"
@@ -37,7 +36,7 @@ const App = () => {
           <Route path="/Database" element={<Database />} />
           <Route path="/Create" element={<Create />} />
           <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Favourite" element={<Favourite />} />
+          <Route path="/Favourite" element={<Create />} />
           <Route path="/profiles/1" element={<Cat1 />} />
           <Route path="/profiles/2" element={<Cat2 />} />
           <Route path="/profiles/3" element={<Cat3 />} />

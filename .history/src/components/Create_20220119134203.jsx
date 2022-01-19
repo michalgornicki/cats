@@ -45,11 +45,6 @@ const Create = () => {
             </select>
           </form>
 
-          <div className="d-flex flex-column">
-        <label for="fname">Podaj swój kontaktowy numer telefonu</label>
-        <textarea className="w-75 text-wrap" type="text" id="fname" name="firstname" placeholder="numer telefonu.."/>
-        </div>
-
         <div className="d-flex flex-column">
         <label for="fname">Stwórz krótki opis kota</label>
         <textarea className="w-75 height-20vh text-wrap" type="text" id="fname" name="firstname" placeholder="Napisz historię kota.."/>
