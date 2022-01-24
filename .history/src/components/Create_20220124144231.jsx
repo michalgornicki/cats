@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
+import Dropzone from "dropzone";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -36,7 +37,16 @@ const Create = (childnum) => {
     }
   };
 
-
+  <input type="file" accept="image/*" onchange="loadFile(event)">
+<img id="output"/>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
 
   return (
     <Container>

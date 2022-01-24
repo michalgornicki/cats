@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
+import Uploady from "@rpldy/uploady";
+
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -56,6 +58,14 @@ const Create = (childnum) => {
           <Card.Img className="card-profile-photo" variant="top" src={catPhoto2} />
           <div className="buttons w-50 m-4"></div>
         </div>
+
+        <Uploady
+    destination={{ url: "my-server.com/upload" }}
+    accept="image/*"
+  >
+    <UploadButton />
+    <UploadPreview />   
+  </Uploady>
 
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />

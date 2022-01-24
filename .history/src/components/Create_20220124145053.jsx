@@ -57,6 +57,14 @@ const Create = (childnum) => {
           <div className="buttons w-50 m-4"></div>
         </div>
 
+        <Uploady
+    destination={{ url: "my-server.com/upload" }}
+    accept="image/*"
+  >
+    <UploadButton />
+    <UploadPreview />   
+  </Uploady>
+
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
+import Dropzone from "dropzone";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -31,12 +32,14 @@ const Create = (childnum) => {
           city: document.getElementById("city").value,
           phone: document.getElementById("phone").value,
         });
-    } else {
-      window.alert("Proszę uzupełnić wszystkie pola");
     }
+    else {window.alert("Proszę uzupełnić wszystkie pola");}
   };
 
-
+  let myDropzone = new Dropzone("#my-form");
+myDropzone.on("addedfile", file => {
+  console.log(`File added: ${file.name}`);
+});
 
   return (
     <Container>
@@ -56,6 +59,8 @@ const Create = (childnum) => {
           <Card.Img className="card-profile-photo" variant="top" src={catPhoto2} />
           <div className="buttons w-50 m-4"></div>
         </div>
+
+        <form action="/target" class="dropzone"></form>
 
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />

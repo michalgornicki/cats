@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
+import Dropzone from "dropzone";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -36,6 +37,10 @@ const Create = (childnum) => {
     }
   };
 
+  let myDropzone = new Dropzone("div#myId", { url: "/file/post"});
+// The dropzone method is added to jQuery elements and can
+// be invoked with an (optional) configuration object.
+$("div#myId").dropzone({ url: "/file/post" });
 
 
   return (
@@ -56,6 +61,8 @@ const Create = (childnum) => {
           <Card.Img className="card-profile-photo" variant="top" src={catPhoto2} />
           <div className="buttons w-50 m-4"></div>
         </div>
+
+        <form action="/target" id="my-form" class="dropzone"></form>
 
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />

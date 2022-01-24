@@ -32,7 +32,6 @@ const Database = (data0) => {
           {data0.data0
             .filter((item) => Region.includes(item.region))
             .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
-            .filter((item) => Sex.includes(item.sex))
             .map((item) => (
               <Card className="card card-hover">
                 <Link className="link-unstyled" to={"/profiles/" + item.id}>

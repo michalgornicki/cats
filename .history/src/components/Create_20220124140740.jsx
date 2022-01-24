@@ -6,36 +6,22 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import catPhoto2 from "../photos/1.jpg";
 
-const Create = (childnum) => {
-  const writeData = () => {
-    if (
-      document.getElementById("name").value &&
-      document.getElementById("age").value &&
-      document.getElementById("color").value &&
-      document.getElementById("sex").value &&
-      document.getElementById("region").value &&
-      document.getElementById("city").value &&
-      document.getElementById("phone").value
-    ) {
-      Firebase.database()
-        .ref("/")
-        .child(childnum.childnum)
-        .set({
-          id: "1",
-          name: document.getElementById("name").value,
-          age: document.getElementById("age").value,
-          color: document.getElementById("color").value,
-          image: "https://i.postimg.cc/c1VV4ShW/1.jpg",
-          sex: document.getElementById("sex").value,
-          region: document.getElementById("region").value,
-          city: document.getElementById("city").value,
-          phone: document.getElementById("phone").value,
-        });
-    } else {
-      window.alert("Proszę uzupełnić wszystkie pola");
-    }
-  };
+const Create = (data0) => {
 
+  
+  const writeData = () => {
+    Firebase.database().ref("/").child(data).set({
+      id: "1",
+      name: document.getElementById("name").value,
+      age: document.getElementById("age").value,
+      color: document.getElementById("color").value,
+      image: "https://i.postimg.cc/c1VV4ShW/1.jpg",
+      sex: document.getElementById("sex").value,
+      region: document.getElementById("region").value,
+      city: document.getElementById("city").value,
+      phone: document.getElementById("phone").value,
+    });
+  };
 
 
   return (
@@ -44,19 +30,11 @@ const Create = (childnum) => {
 
       <Card className="card-profile">
         <label for="fname">Imię kota</label>
-        <input
-          onChange={() => console.log(document.getElementById("name").value)}
-          id="name"
-          className="my-3"
-          type="text"
-          name="firstname"
-          placeholder="Wpisz imię kota.."
-        />
+        <input onChange={() => console.log(document.getElementById("name").value)} id ="name" className="my-3" type="text"  name="firstname" placeholder="Wpisz imię kota.." />
         <div className="d-flex flex-row align-bottom">
           <Card.Img className="card-profile-photo" variant="top" src={catPhoto2} />
           <div className="buttons w-50 m-4"></div>
         </div>
-
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
@@ -90,8 +68,8 @@ const Create = (childnum) => {
 
             <label for="sex">Płeć</label>
             <select id="sex" name="sex" onChange={() => console.log(document.getElementById("sex").value)}>
-              <option value="kotek">Kot</option>
-              <option value="kotka">Kotka</option>
+              <option value="1">Kot</option>
+              <option value="2">Kotka</option>
             </select>
             <label for="color">Kolor sierści</label>
             <select id="color" name="color" onChange={() => console.log(document.getElementById("color").value)}>
@@ -113,6 +91,7 @@ const Create = (childnum) => {
               placeholder="numer telefonu.."
             />
           </div>
+
 
           <div className="d-flex flex-column">
             <label for="fname">Podaj województwo</label>

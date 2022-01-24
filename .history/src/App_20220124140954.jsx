@@ -25,10 +25,9 @@ import Store from "./components/Store.jsx";
 import db from "./firebase.config.js";
 import Firebase from "firebase";
 
-
 const App = () => {
   const [data0, setData0] = useState([]);
-  const [childnum, setChildnum] = useState([]);
+  const [child, setData0] = useState([]);
 
   useEffect(() => {
     getUserData();
@@ -39,12 +38,11 @@ const App = () => {
     ref.on("value", (snapshot) => {
       const stateSnapshot = snapshot.val();
       setData0(stateSnapshot);
-      setChildnum(stateSnapshot.length);
+
     });
   };
 
   console.log(data0)
-  console.log(childnum)
 
 
   return (
@@ -54,7 +52,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home data0={data0} />} />
           <Route path="/Database" element={<Database data0={data0} />} />
-          <Route path="/Create" element={<Create data0={data0} childnum={childnum} />} />
+          <Route path="/Create" element={<Create data0={data0} />} />
           <Route path="/Dashboard" element={<Dashboard data0={data0} />} />
           <Route path="/Favourite" element={<Favourite data0={data0} />} />
           <Route path="/profiles/1" element={<Cat1 data0={data0} />} />

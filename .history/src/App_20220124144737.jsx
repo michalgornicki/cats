@@ -25,6 +25,9 @@ import Store from "./components/Store.jsx";
 import db from "./firebase.config.js";
 import Firebase from "firebase";
 
+import Uploady from "@rpldy/uploady";
+import UploadButton from "@rpldy/upload-button";
+import UploadPreview from "@rpldy/upload-preview";
 
 const App = () => {
   const [data0, setData0] = useState([]);

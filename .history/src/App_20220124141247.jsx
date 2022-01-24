@@ -25,10 +25,9 @@ import Store from "./components/Store.jsx";
 import db from "./firebase.config.js";
 import Firebase from "firebase";
 
-
 const App = () => {
   const [data0, setData0] = useState([]);
-  const [childnum, setChildnum] = useState([]);
+  const [Childnum, setChildnum] = useState([]);
 
   useEffect(() => {
     getUserData();

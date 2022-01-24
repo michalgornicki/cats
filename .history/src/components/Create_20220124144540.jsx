@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
+import Uploady from "@rpldy/uploady";
+import UploadButton from "@rpldy/upload-button";
+import UploadPreview from "@rpldy/upload-preview";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";

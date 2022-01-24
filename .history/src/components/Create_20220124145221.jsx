@@ -57,6 +57,10 @@ const Create = (childnum) => {
           <div className="buttons w-50 m-4"></div>
         </div>
 
+        <form>
+    <input type="file" /> 
+        </form>
+
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />

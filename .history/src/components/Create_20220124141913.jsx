@@ -31,12 +31,9 @@ const Create = (childnum) => {
           city: document.getElementById("city").value,
           phone: document.getElementById("phone").value,
         });
-    } else {
-      window.alert("Proszę uzupełnić wszystkie pola");
     }
+    else {""}
   };
-
-
 
   return (
     <Container>
@@ -56,7 +53,6 @@ const Create = (childnum) => {
           <Card.Img className="card-profile-photo" variant="top" src={catPhoto2} />
           <div className="buttons w-50 m-4"></div>
         </div>
-
         <div className="flex w-25 m-1">
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
           <Card.Img className="card-profile-photo-sm" variant="top" src={catPhoto2} />
@@ -90,8 +86,8 @@ const Create = (childnum) => {
 
             <label for="sex">Płeć</label>
             <select id="sex" name="sex" onChange={() => console.log(document.getElementById("sex").value)}>
-              <option value="kotek">Kot</option>
-              <option value="kotka">Kotka</option>
+              <option value="1">Kot</option>
+              <option value="2">Kotka</option>
             </select>
             <label for="color">Kolor sierści</label>
             <select id="color" name="color" onChange={() => console.log(document.getElementById("color").value)}>
