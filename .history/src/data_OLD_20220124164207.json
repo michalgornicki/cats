@@ -152,8 +152,7 @@
   "region": "Mazowieckie",
   "city": "Modlin",
   "phone": "345-853-379",
-  "created": "5.01.2022, 11:07:45",
-  "user": "administrator"
+  "created": "5.01.2022, 11:07:45"
 },
 {
   "id": "13",
@@ -165,7 +164,6 @@
   "region": "Mazowieckie",
   "city": "Warszawa",
   "phone": "384-573-269",
-  "created": "7.01.2022, 12:07:45",
-  "user": "administrator"
+  "created": "7.01.2022, 12:07:45"
 }
 ]

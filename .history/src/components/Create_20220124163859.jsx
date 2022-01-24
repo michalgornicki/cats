@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
-import { useAuth0 } from "@auth0/auth0-react";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -8,10 +7,6 @@ import Button from "react-bootstrap/Button";
 import catPhoto2 from "../photos/1.jpg";
 
 const Create = (childnum) => {
-
-  const { user, isAuthenticated, isLoading } = useAuth0();
-
-
   const writeData = () => {
     if (
       document.getElementById("name").value &&
@@ -36,7 +31,7 @@ const Create = (childnum) => {
           city: document.getElementById("city").value,
           phone: document.getElementById("phone").value,
           created: new Date().toLocaleString(),
-          user: user.name,
+          user: new Date().toLocaleString(),
         });
 
         document.getElementsByClassName("success-box")[0].style.visibility="visible"

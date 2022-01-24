@@ -126,8 +126,7 @@
   "region": "Lubelskie",
   "city": "Lublin",
   "phone": "348-274-295",
-  "created": "9.01.2022, 11:07:45",
-  "user": "administrator"
+  "created": "9.01.2022, 11:07:45"
 },
 {
   "id": "11",
@@ -139,8 +138,7 @@
   "region": "Łódzkie",
   "city": "Łódź",
   "phone": "468-147-368",
-  "created": "3.01.2022, 10:07:45",
-  "user": "administrator"
+  "created": "3.01.2022, 10:07:45"
 },
 {
   "id": "12",
@@ -152,8 +150,7 @@
   "region": "Mazowieckie",
   "city": "Modlin",
   "phone": "345-853-379",
-  "created": "5.01.2022, 11:07:45",
-  "user": "administrator"
+  "created": "5.01.2022, 11:07:45"
 },
 {
   "id": "13",
@@ -165,7 +162,6 @@
   "region": "Mazowieckie",
   "city": "Warszawa",
   "phone": "384-573-269",
-  "created": "7.01.2022, 12:07:45",
-  "user": "administrator"
+  "created": "7.01.2022, 12:07:45"
 }
 ]

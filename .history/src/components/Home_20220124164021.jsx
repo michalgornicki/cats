@@ -115,7 +115,7 @@ const Home = (data0) => {
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
                   <Card.Text>{item.city + ", " + item.region}</Card.Text>
-                  <Card.Text className="text-secondary">dodane: {item.created}</Card.Text>
+                  <Card.Text className="text-secondary">data: {item.created}</Card.Text>
                   <Card.Text className="text-secondary">dodane przez: {item.user}</Card.Text>
                 </Card.Body>
               

@@ -8,8 +8,8 @@
   "region": "Mazowieckie",
   "city": "Warszawa",
   "phone": "662-848-252",
-  "created": "2.01.2022, 16:07:45",
-  "user": "administrator"
+  "created": "2.01.2022, 16:07:45"
+  "user": administra
 },
 {
   "id": "2",
@@ -21,8 +21,7 @@
   "region": "Lubelskie",
   "city": "Biała Podlaska",
   "phone": "356-164-134",
-  "created": "24.12.2022, 12:07:45",
-  "user": "administrator"
+  "created": "24.12.2022, 12:07:45"
   
 },
 {
@@ -35,8 +34,7 @@
   "region": "Łódzkie",
   "city": "Łódź",
   "phone": "572-124-572",
-  "created": "24.11.2022, 13:02:45",
-  "user": "administrator"
+  "created": "24.11.2022, 13:02:45"
 },
 {
   "id": "4",
@@ -48,8 +46,7 @@
   "region": "Pomorskie",
   "city": "Gdynia",
   "phone": "524-642-452",
-  "created": "21.12.2022, 15:47:45",
-  "user": "administrator"
+  "created": "21.12.2022, 15:47:45"
 },
 {
   "id": "5",
@@ -61,8 +58,7 @@
   "region": "Małopolskie",
   "city": "Kraków",
   "phone": "247-247-632",
-  "created": "1.12.2022, 10:07:45",
-  "user": "administrator"
+  "created": "1.12.2022, 10:07:45"
 },
 {
   "id": "6",
@@ -74,8 +70,7 @@
   "region": "Małopolskie",
   "city": "Kraków",
   "phone": "652-247-472",
-  "created": "13.01.2022, 18:07:45",
-  "user": "administrator"
+  "created": "13.01.2022, 18:07:45"
 },
 {
   "id": "7",
@@ -87,8 +82,7 @@
   "region": "Małopolskie",
   "city": "Wieliczka",
   "phone": "458-147-347",
-  "created": "6.01.2022, 14:07:45",
-  "user": "administrator"
+  "created": "6.01.2022, 14:07:45"
 },
 {
   "id": "8",
@@ -100,8 +94,7 @@
   "region": "Mazowieckie",
   "city": "Płock",
   "phone": "579-138-474",
-  "created": "22.01.2022, 13:07:45",
-  "user": "administrator"
+  "created": "22.01.2022, 13:07:45"
 },
 {
   "id": "9",
@@ -113,8 +106,7 @@
   "region": "Pomorskie",
   "city": "Gdańsk",
   "phone": "347-345-365",
-  "created": "19.01.2022, 16:05:45",
-  "user": "administrator"
+  "created": "19.01.2022, 16:05:45"
 },
 {
   "id": "10",
@@ -126,8 +118,7 @@
   "region": "Lubelskie",
   "city": "Lublin",
   "phone": "348-274-295",
-  "created": "9.01.2022, 11:07:45",
-  "user": "administrator"
+  "created": "9.01.2022, 11:07:45"
 },
 {
   "id": "11",
@@ -139,8 +130,7 @@
   "region": "Łódzkie",
   "city": "Łódź",
   "phone": "468-147-368",
-  "created": "3.01.2022, 10:07:45",
-  "user": "administrator"
+  "created": "3.01.2022, 10:07:45"
 },
 {
   "id": "12",
@@ -152,8 +142,7 @@
   "region": "Mazowieckie",
   "city": "Modlin",
   "phone": "345-853-379",
-  "created": "5.01.2022, 11:07:45",
-  "user": "administrator"
+  "created": "5.01.2022, 11:07:45"
 },
 {
   "id": "13",
@@ -165,7 +154,6 @@
   "region": "Mazowieckie",
   "city": "Warszawa",
   "phone": "384-573-269",
-  "created": "7.01.2022, 12:07:45",
-  "user": "administrator"
+  "created": "7.01.2022, 12:07:45"
 }
 ]

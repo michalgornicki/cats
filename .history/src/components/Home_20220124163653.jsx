@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useAuth0 } from "@auth0/auth0-react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
@@ -9,7 +8,6 @@ import fav from "../heart.png";
 
 
 const Home = (data0) => {
-
 
   const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
@@ -116,7 +114,7 @@ const Home = (data0) => {
                   <Card.Title>{item.name}</Card.Title>
                   <Card.Text>{item.city + ", " + item.region}</Card.Text>
                   <Card.Text className="text-secondary">dodane: {item.created}</Card.Text>
-                  <Card.Text className="text-secondary">dodane przez: {item.user}</Card.Text>
+                  <Card.Text className="text-secondary">dodane: {item.created}</Card.Text>
                 </Card.Body>
               
             </Card>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
-import { useAuth0 } from "@auth0/auth0-react";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
