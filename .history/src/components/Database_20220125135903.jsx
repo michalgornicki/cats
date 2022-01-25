@@ -24,9 +24,9 @@ const regions = [
 ];
 
 const Database = (data0) => {
-  const [Region, setRegion] = useState(
+  const [Region, setRegion] = useState([
     regions
-  );
+  ]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
 
@@ -75,7 +75,7 @@ const Database = (data0) => {
             <input
               type="radio"
               onClick={() =>
-                setRegion( regions )
+                setRegion([ regions])
               }
               id="region1"
               name="region"

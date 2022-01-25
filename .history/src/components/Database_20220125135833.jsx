@@ -4,29 +4,10 @@ import Card from "react-bootstrap/Card";
 import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
-const regions = [
-  "Dolnośląskie",
-  "Kujawsko-pomorskie",
-  "Lubelskie",
-  "Lubuskie",
-  "Łódzkie",
-  "Małopolskie",
-  "Mazowieckie",
-  "Opolskie",
-  "Podkarpackie",
-  "Podlaskie",
-  "Pomorskie",
-  "Śląskie",
-  "Świętokrzyskie",
-  "Warmińsko-mazurskie",
-  "Wielkopolskie",
-  "Zachodniopomorskie",
-];
-
 const Database = (data0) => {
-  const [Region, setRegion] = useState(
+  const [Region, setRegion] = useState([
     regions
-  );
+  ]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
 
@@ -75,7 +56,7 @@ const Database = (data0) => {
             <input
               type="radio"
               onClick={() =>
-                setRegion( regions )
+                setRegion(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"])
               }
               id="region1"
               name="region"

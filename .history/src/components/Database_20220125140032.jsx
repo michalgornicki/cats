@@ -75,7 +75,7 @@ const Database = (data0) => {
             <input
               type="radio"
               onClick={() =>
-                setRegion( regions )
+                setRegion([ regions )
               }
               id="region1"
               name="region"
