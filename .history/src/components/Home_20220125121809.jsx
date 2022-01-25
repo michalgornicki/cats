@@ -22,9 +22,6 @@ const Home = (data0) => {
     else {setRegion(e.target.value);}
   };
 
-  console.log(Region)
-
-
   const toggleAge = () => {
     const form2 = document.getElementById("form2");
     if (form2.value === "1") {
@@ -62,7 +59,7 @@ const Home = (data0) => {
   };
 
   const regions = [
-    "Polska",
+    "Dolnośląskie",
     "Dolnośląskie",
     "Kujawsko-pomorskie",
     "Lubelskie",

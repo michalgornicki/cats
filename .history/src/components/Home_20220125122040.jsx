@@ -22,8 +22,7 @@ const Home = (data0) => {
     else {setRegion(e.target.value);}
   };
 
-  console.log(Region)
-
+  
 
   const toggleAge = () => {
     const form2 = document.getElementById("form2");

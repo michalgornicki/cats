@@ -22,9 +22,6 @@ const Home = (data0) => {
     else {setRegion(e.target.value);}
   };
 
-  console.log(Region)
-
-
   const toggleAge = () => {
     const form2 = document.getElementById("form2");
     if (form2.value === "1") {
@@ -62,7 +59,6 @@ const Home = (data0) => {
   };
 
   const regions = [
-    "Polska",
     "Dolnośląskie",
     "Kujawsko-pomorskie",
     "Lubelskie",
@@ -88,9 +84,13 @@ const Home = (data0) => {
         <Container className="bg-green w-75 mx-0 my-4 p-3 position-relative">
           <Container className="w-75 m-0">
             <Form.Select id="form1" className="my-3 w-100" aria-label="Default select example" onChange={regionCheck}>
-              {regions.map((item =>
-              <option value={item}>{item}</option>
-              ))}
+              {regions.map((item =>))}
+              <option value="Polska">Polska</option>
+              <option value="Mazowieckie">Mazowieckie</option>
+              <option value="Lubelskie">Lubelskie</option>
+              <option value="Małopolskie">Małopolskie</option>
+              <option value="Pomorskie">Pomorskie</option>
+              <option value="Łódzkie">Łódzkie</option>
             </Form.Select>
             <div className="d-flex justify-content-between">
               <Form.Select onChange={toggleAge} id="form2" aria-label="Default select example">

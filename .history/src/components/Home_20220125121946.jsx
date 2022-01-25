@@ -20,10 +20,8 @@ const Home = (data0) => {
   const regionCheck = (e) => {
     if (e.target.value === "Polska") {setRegion(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);}
     else {setRegion(e.target.value);}
+    
   };
-
-  console.log(Region)
-
 
   const toggleAge = () => {
     const form2 = document.getElementById("form2");
