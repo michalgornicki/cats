@@ -122,7 +122,7 @@ const Home = (data0) => {
 
         <div id="cat-box1">
 
-        <div id="cat-box-name" className="display-6 w-75 m-auto">
+        <div id="cat-box-name" className="display-6 mx-5">
         Losowe kociaki z naszej bazy
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">

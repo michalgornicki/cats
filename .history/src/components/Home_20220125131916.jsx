@@ -83,8 +83,6 @@ const Home = (data0) => {
 
   return (
     <div>
-        <div className="display-6 w-75 m-auto">Znajdź swojego towarzysza</div>
-
       <Container>
         <Container className="search-box bg-green mx-0 my-4 p-3 position-relative">
           <Container className="w-lg-75 w-sm-100 m-0">
@@ -122,7 +120,7 @@ const Home = (data0) => {
 
         <div id="cat-box1">
 
-        <div id="cat-box-name" className="display-6 w-75 m-auto">
+        <div id="cat-box-name" className="display-6 mx-5">
         Losowe kociaki z naszej bazy
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">

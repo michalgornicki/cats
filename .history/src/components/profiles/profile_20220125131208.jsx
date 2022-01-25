@@ -29,10 +29,10 @@ const Cat1 = (data0) => {
           <Button className="m-1 w-50 bg-green-button" variant="success">
               Telefon: {isAuthenticated? data0.data0[id - 1].phone : "***-***-***"}
             </Button>
-            <Button className="m-1 w-50 bg-green-button" variant="success">
+            <Button className="m-1 w-50" variant="success">
             {isAuthenticated? "Dodaj do ulubionych ❤️" : "Zaloguj się by polubić ❤️"}	
             </Button>
-            <Button className="m-1 w-50 bg-green-button" variant="success" onClick={Copy}>
+            <Button className="m-1 w-50" variant="success" onClick={Copy}>
               Kopiuj link &#128236;
             </Button>
           </div>

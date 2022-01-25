@@ -32,7 +32,7 @@ const Cat1 = (data0) => {
             <Button className="m-1 w-50 bg-green-button" variant="success">
             {isAuthenticated? "Dodaj do ulubionych ❤️" : "Zaloguj się by polubić ❤️"}	
             </Button>
-            <Button className="m-1 w-50 bg-green-button" variant="success" onClick={Copy}>
+            <Button className="m-1 w-50 bg-green-button " variant="success" onClick={Copy}>
               Kopiuj link &#128236;
             </Button>
           </div>
