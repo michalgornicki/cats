@@ -18,10 +18,8 @@ const Dashboard = (data0) => {
           {user.email}
           </div>
 
-          <div className="display-5">Moje ogłoszenia</div>
-
           {data0.data0
-          .filter((item) => user.name.includes(item.user))
+          .filter((item) => s.includes(item.region))
           .map((item) => (
             <Card className="card card-hover">
               <div className="position-relative">

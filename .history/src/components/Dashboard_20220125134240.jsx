@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from "react-router-dom";
-
 
 const Dashboard = (data0) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -18,10 +16,7 @@ const Dashboard = (data0) => {
           {user.email}
           </div>
 
-          <div className="display-5">Moje ogłoszenia</div>
-
           {data0.data0
-          .filter((item) => user.name.includes(item.user))
           .map((item) => (
             <Card className="card card-hover">
               <div className="position-relative">

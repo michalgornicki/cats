@@ -18,7 +18,7 @@ const Dashboard = (data0) => {
           {user.email}
           </div>
 
-          <div className="display-5">Moje ogłoszenia</div>
+          <div className="div">Moje ogłoszenia</div>
 
           {data0.data0
           .filter((item) => user.name.includes(item.user))
