@@ -107,7 +107,7 @@ const Home = (data0) => {
               </Form.Select>
             </div>
 
-            <button onClick={Find} type="button" className="btn bg-green-button text-white w-100 my-3">
+            <button onClick={Find} type="button" className="btn bg-green text-white w-100 my-3">
               ZNAJDŹ
             </button>
           </Container>

@@ -7,12 +7,8 @@
 }
 
 .bg-green {
-  background: linear-gradient(#c2e09b, #94d145);
+  background-color: #91ff00;
 }
-
-.bg-green-button {
-    background-color: #38b62f!important;
-  }
 
 .bg-bright-green {
   background-color: #00D816!important;
@@ -155,7 +151,6 @@
 
 .search-box{
     width: 75%!important;
-    border-radius: 4vmin;
 }
 
 .w-lg-75{

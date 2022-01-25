@@ -20,7 +20,7 @@ const Login = () => {
 
           <img className="user-photo" src={user.picture} alt={user.name} />
           <Link className="link-unstyled text-white mx-3" to="/Dashboard">
-          <Button onClick={""} className=" m-1 bg-green-button" variant="success">
+          <Button onClick={""} className=" m-1" variant="success">
             Moje konto
           </Button>
           </Link>

@@ -7,12 +7,8 @@
 }
 
 .bg-green {
-  background: linear-gradient(#c2e09b, #94d145);
+  background: rad-gradient(#7f9e57, #9de045);
 }
-
-.bg-green-button {
-    background-color: #38b62f!important;
-  }
 
 .bg-bright-green {
   background-color: #00D816!important;
