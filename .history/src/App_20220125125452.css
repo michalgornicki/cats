@@ -160,7 +160,7 @@
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
 
     .search-box{
-        width: 100%!important;
+        width: 100%;
     }
 
     .w-sm-100{

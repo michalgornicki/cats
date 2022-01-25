@@ -150,7 +150,7 @@
 }
 
 .search-box{
-    width: 75%!important;
+    width: 75%;
 }
 
 .w-lg-75{
@@ -160,7 +160,7 @@
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
 
     .search-box{
-        width: 100%!important;
+        width: 100%;
     }
 
     .w-sm-100{
@@ -168,7 +168,13 @@
     }
 
     .cat-background{
-        display: none;
+        position: absolute;
+        top: 8%;
+        right: 0;
+        margin-right: 4vmin;
+        margin-top: 2vmin;
+        width: 17%;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.479));
     }
 
     .card{

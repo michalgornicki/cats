@@ -86,7 +86,7 @@ const Home = (data0) => {
       <Container>
         <div className="display-6">Znajdź swojego towarzysza</div>
         <Container className="search-box bg-green mx-0 my-4 p-3 position-relative">
-          <Container className="w-lg-75 w-sm-100 m-0">
+          <Container className="width m-0">
             <Form.Select id="form1" className="my-3 w-100" aria-label="Default select example" onChange={regionCheck}>
               {regions.map((item =>
               <option value={item}>{item}</option>

@@ -85,8 +85,8 @@ const Home = (data0) => {
     <div>
       <Container>
         <div className="display-6">Znajdź swojego towarzysza</div>
-        <Container className="search-box bg-green mx-0 my-4 p-3 position-relative">
-          <Container className="w-lg-75 w-sm-100 m-0">
+        <Container className="bg-green w-100 mx-0 my-4 p-3 position-relative">
+          <Container className="m-0">
             <Form.Select id="form1" className="my-3 w-100" aria-label="Default select example" onChange={regionCheck}>
               {regions.map((item =>
               <option value={item}>{item}</option>
@@ -117,7 +117,7 @@ const Home = (data0) => {
         </Container>
       </Container>
 
-      <div id="cat-box-name" className="display-6 w-75 m-auto">
+      <div id="cat-box-name" className="display-6 w-75 m-auto pt-5">
         Losowe kociaki z naszej bazy
       </div>
 

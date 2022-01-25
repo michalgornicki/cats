@@ -150,25 +150,21 @@
 }
 
 .search-box{
-    width: 75%!important;
+    width: 75%;
 }
 
 .w-lg-75{
-    width: 75%!important;
+    width: 10
 }
 
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
 
     .search-box{
-        width: 100%!important;
+        width: 100%;
     }
 
     .w-sm-100{
-        width: 100%!important;
-    }
 
-    .cat-background{
-        display: none;
     }
 
     .card{

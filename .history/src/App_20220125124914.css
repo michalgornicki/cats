@@ -24,7 +24,7 @@
 
 .cat-background{
     position: absolute;
-    top: 8%;
+    top: 9%;
     right: 0;
     margin-right: 4vmin;
     margin-top: 2vmin;
@@ -149,27 +149,7 @@
     padding: 10vmin;
 }
 
-.search-box{
-    width: 75%!important;
-}
-
-.w-lg-75{
-    width: 75%!important;
-}
-
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
-
-    .search-box{
-        width: 100%!important;
-    }
-
-    .w-sm-100{
-        width: 100%!important;
-    }
-
-    .cat-background{
-        display: none;
-    }
 
     .card{
         width: 100%;
