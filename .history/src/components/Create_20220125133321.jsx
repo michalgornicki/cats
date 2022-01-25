@@ -48,7 +48,7 @@ const Create = (childnum) => {
         });
 
         document.getElementsByClassName("success-box")[0].style.visibility="visible"
-        window.location.href = "https://michalgornicki.github.io/cats";
+        window.location.href = "https://michalgornicki.github.io/cats/";
     } 
     else {
       window.alert("Proszę uzupełnić wszystkie pola");
