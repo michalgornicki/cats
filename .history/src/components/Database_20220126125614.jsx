@@ -4,7 +4,10 @@ import Card from "react-bootstrap/Card";
 import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
+
+
 const Database = (data0) => {
+
   const regions = [
     "Dolnośląskie",
     "Kujawsko-pomorskie",
@@ -36,8 +39,6 @@ const Database = (data0) => {
   const sexCheck = (e) => {
     e.target.checked ? setSex(e.target.value) : setSex([]);
   };
-
-  console.log(data0.data0.map((item) => item));
 
   return (
     <div>
@@ -98,25 +99,25 @@ const Database = (data0) => {
           </div>
           <div>
             <input type="radio" onClick={() => setMinAge([0, 2])} id="age1" name="age" value="baby" />
-            <label className="mx-1" for="age">
+            <label className="mx-1" for="vehicle1">
               0-2 lata
             </label>
           </div>
           <div>
             <input type="radio" onClick={() => setMinAge([3, 5])} id="age2" name="age" value="young" />
-            <label className="mx-1" for="age">
+            <label className="mx-1" for="vehicle1">
               3-5 lat
             </label>
           </div>
           <div>
             <input type="radio" onClick={() => setMinAge([6, 10])} id="age3" name="age" value="adult" />
-            <label className="mx-1" for="age">
+            <label className="mx-1" for="vehicle1">
               6-10 lat
             </label>
           </div>
           <div>
             <input type="radio" onClick={() => setMinAge([11, 50])} id="age4" name="age" value="older" />
-            <label className="mx-1" for="age">
+            <label className="mx-1" for="vehicle1">
               11+ lat
             </label>
           </div>
@@ -126,19 +127,19 @@ const Database = (data0) => {
           <div className="text-uppercase">Płeć</div>
           <div>
             <input type="radio" onClick={() => setSex(["kotek", "kotka"])} id="sex" name="vehicle1" value="kot" />
-            <label className="mx-1" for="sex">
+            <label className="mx-1" for="vehicle1">
               Obie płcie
             </label>
           </div>
           <div>
             <input type="radio" onClick={sexCheck} id="sex" name="vehicle1" value="kotek" />
-            <label className="mx-1" for="sex">
+            <label className="mx-1" for="vehicle1">
               kotek
             </label>
           </div>
           <div>
             <input type="radio" onClick={sexCheck} id="sex" name="vehicle1" value="kotka" />
-            <label className="mx-1" for="sex">
+            <label className="mx-1" for="vehicle1">
               Kotka
             </label>
           </div>

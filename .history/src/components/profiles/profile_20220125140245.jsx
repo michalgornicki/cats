@@ -30,7 +30,7 @@ const Cat1 = (data0) => {
               Telefon: {isAuthenticated? data0.data0[id - 1].phone : "***-***-***"}
             </Button>
             <Button className="m-1 w-50 bg-green-button" variant="success">
-            {isAuthenticated? "Dodaj do ulubionych ❤️" : "Zaloguj się aby ❤️"}	
+            {isAuthenticated? "Dodaj do ulubionych ❤️" : "Zaloguj się by dodać ❤️"}	
             </Button>
             <Button className="m-1 w-50 bg-green-button" variant="success" onClick={Copy}>
               Kopiuj link &#128236;

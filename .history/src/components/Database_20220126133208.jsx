@@ -83,6 +83,7 @@ const Database = (data0) => {
               <input type="radio" onClick={regionCheck} name="region" value={item} />
               <label className="mx-1" for="region">
                 {item}
+                {data0.data0.filter((item) => Sex.includes(item.sex))}
               </label>
             </div>
           ))}

@@ -4,7 +4,10 @@ import Card from "react-bootstrap/Card";
 import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
+
+
 const Database = (data0) => {
+
   const regions = [
     "Dolnośląskie",
     "Kujawsko-pomorskie",
@@ -37,7 +40,7 @@ const Database = (data0) => {
     e.target.checked ? setSex(e.target.value) : setSex([]);
   };
 
-  console.log(data0.data0.map((item) => item));
+  console.log(data0.data0)
 
   return (
     <div>
@@ -83,6 +86,7 @@ const Database = (data0) => {
               <input type="radio" onClick={regionCheck} name="region" value={item} />
               <label className="mx-1" for="region">
                 {item}
+                {data0.data0.filter((item) => item.region === "Mazowieckie")}
               </label>
             </div>
           ))}

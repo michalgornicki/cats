@@ -10,35 +10,15 @@ import fav from "../heart.png";
 
 const Home = (data0) => {
 
-  const regions = [
-    "Polska",
-    "Dolnośląskie",
-    "Kujawsko-pomorskie",
-    "Lubelskie",
-    "Lubuskie",
-    "Łódzkie",
-    "Małopolskie",
-    "Mazowieckie",
-    "Opolskie",
-    "Podkarpackie",
-    "Podlaskie",
-    "Pomorskie",
-    "Śląskie",
-    "Świętokrzyskie",
-    "Warmińsko-mazurskie",
-    "Wielkopolskie",
-    "Zachodniopomorskie",
-  ];
 
-
-  const [Region, setRegion] = useState( regions );
+  const [Region, setRegion] = useState(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
   const [minAge, setMinAge] = useState([0, 50]);
  
   const[Favs, setFavs] = useState([]);
 
   const regionCheck = (e) => {
-    if (e.target.value === "Polska") {setRegion( regions );}
+    if (e.target.value === "Polska") {setRegion(["Mazowieckie", "Podlaskie", "Lubelskie", "Pomorskie", "Małopolskie", "Łódzkie"]);}
     else {setRegion(e.target.value);}
   };
 
@@ -81,7 +61,25 @@ const Home = (data0) => {
     catboxName.innerHTML = "Znalezione koty:";
   };
 
-
+  const regions = [
+    "Polska",
+    "Dolnośląskie",
+    "Kujawsko-pomorskie",
+    "Lubelskie",
+    "Lubuskie",
+    "Łódzkie",
+    "Małopolskie",
+    "Mazowieckie",
+    "Opolskie",
+    "Podkarpackie",
+    "Podlaskie",
+    "Pomorskie",
+    "Śląskie",
+    "Świętokrzyskie",
+    "Warmińsko-mazurskie",
+    "Wielkopolskie",
+    "Zachodniopomorskie",
+  ];
 
   return (
     <div>
@@ -125,14 +123,10 @@ const Home = (data0) => {
         <div id="cat-box1">
 
         <div id="cat-box-name" className="display-6 w-75 m-auto">
-        Ostatnio dodane
+        Losowe kociaki z naszej bazy
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
           {data0.data0
-          .sort((a, b) => {
-             return parseFloat(b.id) - parseFloat(a.id);
-          })
-          
           .map((item) => (
             <Card className="card card-hover">
               <div className="position-relative">
@@ -174,8 +168,6 @@ const Home = (data0) => {
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>{item.city + ", " + item.region}</Card.Text>
-                <Card.Text className="text-secondary">dodane: {item.created}</Card.Text>
-                <Card.Text className="text-secondary">dodane przez: {item.user}</Card.Text>
               </Card.Body>
               
             </Card>
