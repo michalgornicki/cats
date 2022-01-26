@@ -128,7 +128,7 @@ const Home = (data0) => {
         Ostatnio dodane
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
-          {data0.data0
+          {data0.data0.reverse()
           
           .map((item) => (
             <Card className="card card-hover">
@@ -148,7 +148,7 @@ const Home = (data0) => {
               
             </Card>
           )
-          ).reverse()}
+          )}
         </Container>
         </div>
 
@@ -174,7 +174,7 @@ const Home = (data0) => {
               </Card.Body>
               
             </Card>
-          )).reverse()}
+          ))}
       </Container>
       </div>
     </div>

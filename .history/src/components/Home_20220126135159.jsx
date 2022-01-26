@@ -148,7 +148,7 @@ const Home = (data0) => {
               
             </Card>
           )
-          ).reverse()}
+          )}
         </Container>
         </div>
 
@@ -174,7 +174,7 @@ const Home = (data0) => {
               </Card.Body>
               
             </Card>
-          )).reverse()}
+          ))}
       </Container>
       </div>
     </div>
