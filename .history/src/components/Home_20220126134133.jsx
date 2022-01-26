@@ -129,6 +129,9 @@ const Home = (data0) => {
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
           {data0.data0
+          .sort((a, b) => {
+             return parseFloat(b.id) - parseFloat(a.id);
+          })
           
           .map((item) => (
             <Card className="card card-hover">
@@ -147,14 +150,16 @@ const Home = (data0) => {
                 </Card.Body>
               
             </Card>
-          )
-          )}
+          ))}
         </Container>
         </div>
 
       <div id="cat-box2">
       <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
         {data0.data0
+          .sort((a, b) => {
+             return parseFloat(b.id) - parseFloat(a.id);
+          })
           .filter((item) => Region.includes(item.region))
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
           .filter((item) => Sex.includes(item.sex))

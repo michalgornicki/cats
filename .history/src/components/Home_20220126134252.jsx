@@ -147,8 +147,7 @@ const Home = (data0) => {
                 </Card.Body>
               
             </Card>
-          )
-          )}
+          ))}
         </Container>
         </div>
 

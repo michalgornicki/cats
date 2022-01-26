@@ -148,7 +148,10 @@ const Home = (data0) => {
               
             </Card>
           )
-          )}
+          
+          .sort((a, b) => {
+            return parseFloat(b.id) - parseFloat(a.id);
+         }))}
         </Container>
         </div>
 

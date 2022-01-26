@@ -129,6 +129,9 @@ const Home = (data0) => {
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
           {data0.data0
+          .sort((a, b) => {
+             return parseFloat(b.id) - parseFloat(a.id);
+          })
           
           .map((item) => (
             <Card className="card card-hover">
@@ -147,8 +150,7 @@ const Home = (data0) => {
                 </Card.Body>
               
             </Card>
-          )
-          )}
+          ))}
         </Container>
         </div>
 
