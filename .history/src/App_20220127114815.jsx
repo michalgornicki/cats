@@ -24,6 +24,7 @@ const App = () => {
 
   useEffect(() => {
     getCatsData();
+    getUsersData();
   }, []);
 
   const getCatsData = () => {

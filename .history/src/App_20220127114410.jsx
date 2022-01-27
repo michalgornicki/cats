@@ -23,10 +23,11 @@ const App = () => {
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {
-    getCatsData();
+    getUserData();
+    writeUserData();
   }, []);
 
-  const getCatsData = () => {
+  const getUserData = () => {
     let ref = Firebase.database().ref("/cats");
     ref.on("value", (snapshot) => {
       const stateSnapshot = snapshot.val();
@@ -37,6 +38,19 @@ const App = () => {
 
   console.log(data0)
   console.log(childnum)
+
+  const writeUserData = () => {
+    if (user) {
+    Firebase.database()
+      .ref("/users")
+      .child(childnum.childnum)
+        .set({
+        user: user.name,
+        favourites: [1,1,1]
+      });
+    }
+};
+
 
   return (
     <Router>

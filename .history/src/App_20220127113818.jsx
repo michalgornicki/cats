@@ -17,16 +17,15 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
 
-  const { user, isAuthenticated, isLoading } = useAuth0();
-
+  
   const [data0, setData0] = useState([]);
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {
-    getCatsData();
+    getUserData();
   }, []);
 
-  const getCatsData = () => {
+  const getUserData = () => {
     let ref = Firebase.database().ref("/cats");
     ref.on("value", (snapshot) => {
       const stateSnapshot = snapshot.val();
@@ -37,6 +36,15 @@ const App = () => {
 
   console.log(data0)
   console.log(childnum)
+
+  const writeUserData = () => {
+    Firebase.database()
+      .ref("/users")
+      .child(childnum.childnum)
+      .set({
+        user: user.name,
+      });
+};
 
   return (
     <Router>
