@@ -114,11 +114,12 @@ const Home = (data0) => {
     }
     else if (user) {
       Firebase.database()
-        .ref("/users")
+        .ref("/users" + id)
         .child(usernum)
         .set({
           favourites: data0.data0,
         });
+        
     }
   };
 

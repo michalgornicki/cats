@@ -119,6 +119,7 @@ const Home = (data0) => {
         .set({
           favourites: data0.data0,
         });
+        
     }
   };
 
@@ -176,7 +177,9 @@ const Home = (data0) => {
               
               <Card.Img className="card-photo" variant="top" src={item.image} />
               </Link>
-              <img className="fav" onClick={writeData} src={fav} alt="" />
+              <img className="fav" onClick={
+                
+              } src={fav} alt="" />
               </div>
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
