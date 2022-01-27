@@ -38,7 +38,7 @@ const App = () => {
   console.log(data0)
   console.log(childnum)
 
-  console.log(window.location.origin)
+  console.log(https://michalgornicki.github.io/cats/)
 
   return (
     <Router>
