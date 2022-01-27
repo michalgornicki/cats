@@ -7,24 +7,19 @@ const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
   const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading, auth0 } = useAuth0();
-  
-  const updateData = (user, context, callback) => {
-    user.user_metadata = user.app_metadata || {};
-    // update the app_metadata that will be part of the response
-    user.app_metadata.stripeID = 'abc123';
-  
-    // persist the app_metadata update
-    auth0.users.updateUserMetadata(user.user_id, user.app_metadata)
-      .then(function(){
-        callback(null, user, context);
-      })
-      .catch(function(err){
-        callback(err);
-      });
-  }
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
-  updateData()
+  exports.onExecutePostUserRegistration = async (event) => {
+    const ManagementClient = require('auth0').ManagementClient;
+  
+    var management = new ManagementClient({
+        domain: event.secrets.domain,
+        clientId: event.secrets.clientId,
+        clientSecret: event.secrets.clientSecret,
+    });
+  
+    await management.updateAppMetadata({id: event.user.user_id }, { alternateId: 123});
+  };
 
   return (
     <div>

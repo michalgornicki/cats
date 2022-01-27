@@ -7,7 +7,7 @@ const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
   const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading, auth0 } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
   
   const updateData = (user, context, callback) => {
     user.user_metadata = user.app_metadata || {};
@@ -23,8 +23,6 @@ const Login = () => {
         callback(err);
       });
   }
-
-  updateData()
 
   return (
     <div>

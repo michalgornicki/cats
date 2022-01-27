@@ -7,9 +7,9 @@ const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
   const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading, auth0 } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
   
-  const updateData = (user, context, callback) => {
+  function(user, context, callback){
     user.user_metadata = user.app_metadata || {};
     // update the app_metadata that will be part of the response
     user.app_metadata.stripeID = 'abc123';
@@ -22,9 +22,6 @@ const Login = () => {
       .catch(function(err){
         callback(err);
       });
-  }
-
-  updateData()
 
   return (
     <div>

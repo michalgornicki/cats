@@ -7,7 +7,7 @@
 }
 
 .bg-green {
-  background: linear-gradient(#bbd69a, #8fbd57);
+  background: linear-gradient(#acc58e, #8fbd57);
 }
 
 .bg-green-button {
@@ -45,12 +45,12 @@
 }
 
 .card-photo{
-    width: 100%!important;
+    width: 90%!important;
     height: 300px!important;
     object-fit: cover;
     margin: auto;
-    border-top-left-radius: 3vmin!important;
-    border-top-right-radius: 3vmin!important;
+    margin-top: 5%;
+    border-radius: 3vmin!important;
 }
 
 .card-profile{

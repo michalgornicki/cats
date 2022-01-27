@@ -15,7 +15,17 @@ import Firebase from "firebase";
 
 const App = () => {
 
-
+    exports.onExecutePostUserRegistration = async (event) => {
+    const ManagementClient = require('auth0').ManagementClient;
+  
+    var management = new ManagementClient({
+        domain: event.secrets.domain,
+        clientId: event.secrets.clientId,
+        clientSecret: event.secrets.clientSecret,
+    });
+  
+    await management.updateAppMetadata({id: event.user.user_id }, { alternateId: 123});
+  };
 
   const [data0, setData0] = useState([]);
   const [childnum, setChildnum] = useState([]);

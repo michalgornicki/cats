@@ -49,8 +49,7 @@
     height: 300px!important;
     object-fit: cover;
     margin: auto;
-    border-top-left-radius: 3vmin!important;
-    border-top-right-radius: 3vmin!important;
+    border: 3vmin!important;
 }
 
 .card-profile{

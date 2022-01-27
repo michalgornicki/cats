@@ -24,7 +24,7 @@ const Login = () => {
       });
   }
 
-  updateData()
+  
 
   return (
     <div>

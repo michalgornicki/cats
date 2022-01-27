@@ -42,15 +42,16 @@
     margin: 1.5%;
     border-radius: 3vmin!important;
     text-align: center;
+    background: linear-gradient(twhite, rgb(235, 235, 235));
 }
 
 .card-photo{
-    width: 100%!important;
+    width: 90%!important;
     height: 300px!important;
     object-fit: cover;
     margin: auto;
-    border-top-left-radius: 3vmin!important;
-    border-top-right-radius: 3vmin!important;
+    margin-top: 5%;
+    border-radius: 3vmin!important;
 }
 
 .card-profile{

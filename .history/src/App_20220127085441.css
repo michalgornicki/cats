@@ -45,12 +45,12 @@
 }
 
 .card-photo{
-    width: 100%!important;
+    width: 90%!important;
     height: 300px!important;
     object-fit: cover;
     margin: auto;
-    border-top-left-radius: 3vmin!important;
-    border-top-right-radius: 3vmin!important;
+    margin-top: 5%;
+    border-radius: 3vmin!important;
 }
 
 .card-profile{
@@ -67,7 +67,6 @@
     width: 50vh!important;
     height: 50vh!important;
     object-fit: cover;
-    margin: 2vh;
     border-radius: 3vmin!important;
 }
 

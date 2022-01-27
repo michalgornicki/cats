@@ -16,6 +16,9 @@ import Firebase from "firebase";
 const App = () => {
 
 
+  
+    await management.updateAppMetadata({id: event.user.user_id }, { alternateId: 123});
+  };
 
   const [data0, setData0] = useState([]);
   const [childnum, setChildnum] = useState([]);

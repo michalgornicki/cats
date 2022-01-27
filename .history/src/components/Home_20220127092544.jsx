@@ -30,7 +30,17 @@ const Home = (data0) => {
     "Zachodniopomorskie",
   ];
 
+  exports.onExecutePostUserRegistration = async (event) => {
+    const ManagementClient = require('auth0').ManagementClient;
   
+    var management = new ManagementClient({
+        domain: event.secrets.domain,
+        clientId: event.secrets.clientId,
+        clientSecret: event.secrets.clientSecret,
+    });
+  
+    await management.updateAppMetadata({id: event.user.user_id }, { alternateId: 123});
+  };
 
 
   const [Region, setRegion] = useState( regions );

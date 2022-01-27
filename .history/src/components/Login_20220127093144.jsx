@@ -24,8 +24,6 @@ const Login = () => {
       });
   }
 
-  updateData()
-
   return (
     <div>
       {!isAuthenticated ? (
