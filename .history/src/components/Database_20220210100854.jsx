@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
-const Database = (props) => {
+const Database = (data0) => {
   const regions = [
     "Dolnośląskie",
     "Kujawsko-pomorskie",

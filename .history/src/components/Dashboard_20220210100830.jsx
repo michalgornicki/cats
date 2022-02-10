@@ -16,7 +16,7 @@ const Dashboard = (props) => {
       <div className="display-5">Moje ogłoszenia</div>
 
       <Container className="d-flex flex-wrap">
-        {props.data0
+        {data0.data0
           .filter((item) => user.name.includes(item.user))
           .map((item) => (
             <Card className="card card-hover">
