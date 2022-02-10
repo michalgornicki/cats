@@ -186,15 +186,15 @@
     }
 
     .buttons{
-        display: flex;
         position: relative;
         top: 30%;
     }
 
     .card-profile-photo{
-        width: 80vw!important;
-        height: 80vw!important;
-        margin: auto;
+        position: relative;
+        width: 50vh!important;
+        height: 50vh!important;
+        object-fit: cover;
     }
 
 }

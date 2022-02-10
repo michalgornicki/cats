@@ -16,11 +16,14 @@ const Cat1 = (data0) => {
 
   let { id } = useParams();
 
+
   return (
     <Container className="fading">
       <div className="display-6">Profil kota</div>
 
+      {data0.data0? 
       
+    }
       <Card className="card-profile">
         <Card.Title className="display-6 mb-5">Cześć, nazywam się {data0.data0[id - 1].name}!</Card.Title>
         <Card.Img className="card-profile-photo" variant="top" src={data0.data0[id - 1].image} />

@@ -186,7 +186,6 @@
     }
 
     .buttons{
-        display: flex;
         position: relative;
         top: 30%;
     }

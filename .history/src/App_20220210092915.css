@@ -185,16 +185,6 @@
         text-align: center;
     }
 
-    .buttons{
-        display: flex;
-        position: relative;
-        top: 30%;
-    }
-
-    .card-profile-photo{
-        width: 80vw!important;
-        height: 80vw!important;
-        margin: auto;
-    }
+    .buttons
 
 }

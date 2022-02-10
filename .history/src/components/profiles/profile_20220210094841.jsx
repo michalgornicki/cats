@@ -16,6 +16,10 @@ const Cat1 = (data0) => {
 
   let { id } = useParams();
 
+  if (!this.state.selectedPrice)
+  return null;
+
+
   return (
     <Container className="fading">
       <div className="display-6">Profil kota</div>

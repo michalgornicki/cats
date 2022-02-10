@@ -16,6 +16,11 @@ const Cat1 = (data0) => {
 
   let { id } = useParams();
 
+  if (!this.state.data) {
+    return <div />
+}
+
+
   return (
     <Container className="fading">
       <div className="display-6">Profil kota</div>
