@@ -13,7 +13,7 @@ import Firebase from "firebase";
 
 const App = () => {
 
-  const [data0, setData0] = useState([]);
+  const [catsData, setCatsData] = useState([]);
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const App = () => {
     let ref = Firebase.database().ref("/cats");
     ref.on("value", (snapshot) => {
       const stateSnapshot = snapshot.val();
-      setData0(stateSnapshot);
+      setCatsData(stateSnapshot);
       setChildnum(stateSnapshot.length);
     });
   };

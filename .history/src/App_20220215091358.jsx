@@ -13,7 +13,7 @@ import Firebase from "firebase";
 
 const App = () => {
 
-  const [data0, setData0] = useState([]);
+  const [catsData, setCatsData] = useState([]);
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const App = () => {
     let ref = Firebase.database().ref("/cats");
     ref.on("value", (snapshot) => {
       const stateSnapshot = snapshot.val();
-      setData0(stateSnapshot);
+      setCatsData(stateSnapshot);
       setChildnum(stateSnapshot.length);
     });
   };
@@ -34,11 +34,11 @@ const App = () => {
       <div>
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home data0={data0} />} />
-          <Route path="/Database" element={<Database data0={data0} />} />
-          <Route path="/Create" element={<Create data0={data0} childnum={childnum} />} />
-          <Route path="/Dashboard" element={<Dashboard data0={data0} />} />
-          <Route path="/Favourite" element={<Favourite data0={data0} />} />
+          <Route path="/" element={<Home data0={catsData} />} />
+          <Route path="/Database" element={<Database data0={catsData} />} />
+          <Route path="/Create" element={<Create data0={catsData} childnum={childnum} />} />
+          <Route path="/Dashboard" element={<Dashboard data0={catsData} />} />
+          <Route path="/Favourite" element={<Favourite data0={catsData} />} />
           <Route path="/profiles/:id" element={<Cat data0={data0} />} />
 
         </Routes>

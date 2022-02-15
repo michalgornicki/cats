@@ -104,7 +104,7 @@ const Home = (props) => {
         .set({
           id: usernum + 1,
           user: user.name,
-          favourites: props.data0,
+          favourites: props.catsData,
         });
     }
     else if (user) {
@@ -112,7 +112,7 @@ const Home = (props) => {
         .ref("/users")
         .child(usernum)
         .set({
-          favourites: props.data0,
+          favourites: props.catsData,
         });
     }
   };
@@ -162,7 +162,7 @@ const Home = (props) => {
         Ostatnio dodane
       </div>
         <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
-          {props.data0
+          {props.catsData
           
           .map((item) => (
             <Card className="card card-hover">
@@ -188,7 +188,7 @@ const Home = (props) => {
 
       <div id="cat-box2">
       <Container className="w-75 mx-5 my-4 d-flex flex-wrap fading">
-        {props.data0
+        {props.catsData
           .filter((item) => Region.includes(item.region))
           .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
           .filter((item) => Sex.includes(item.sex))

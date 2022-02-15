@@ -13,7 +13,7 @@ import Firebase from "firebase";
 
 const App = () => {
 
-  const [data0, setData0] = useState([]);
+  const [catsData, setCatsData] = useState([]);
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {

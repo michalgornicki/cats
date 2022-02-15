@@ -5,7 +5,24 @@ import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
 const Database = (props) => {
-  const regions = ["Dolnośląskie", "Kujawsko-pomorskie", "Lubelskie", "Lubuskie", "Łódzkie", "Małopolskie", "Mazowieckie", "Opolskie", "Podkarpackie", "Podlaskie", "Pomorskie", "Śląskie", "Świętokrzyskie", "Warmińsko-mazurskie", "Wielkopolskie", "Zachodniopomorskie"];
+  const regions = [
+    "Dolnośląskie",
+    "Kujawsko-pomorskie",
+    "Lubelskie",
+    "Lubuskie",
+    "Łódzkie",
+    "Małopolskie",
+    "Mazowieckie",
+    "Opolskie",
+    "Podkarpackie",
+    "Podlaskie",
+    "Pomorskie",
+    "Śląskie",
+    "Świętokrzyskie",
+    "Warmińsko-mazurskie",
+    "Wielkopolskie",
+    "Zachodniopomorskie",
+  ];
 
   const [Region, setRegion] = useState(regions);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
@@ -20,7 +37,7 @@ const Database = (props) => {
     e.target.checked ? setSex(e.target.value) : setSex([]);
   };
 
-  console.log(props.data0.map((item) => item));
+  console.log(props.catsData.map((item) => item));
 
   return (
     <div className="position-relative d-flex flex-column flex-lg-row ">
@@ -105,7 +122,7 @@ const Database = (props) => {
       <Container>
         <div className="display-6">Koty czekające na nowy dom</div>
         <Container className="w-lg-75 w-sm-100 mt-5 d-flex flex-wrap fading m-0">
-          {props.data0
+          {props.catsData
             .filter((item) => Region.includes(item.region))
             .filter((item) => item.age > minAge[0] && item.age <= minAge[1])
             .filter((item) => Sex.includes(item.sex))
