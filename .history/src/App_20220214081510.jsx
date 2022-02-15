@@ -9,15 +9,21 @@ import Create from "./components/Create.jsx";
 import Favourite from "./components/Favourite.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Cat from "./components/profiles/profile.jsx";
+import { storage, firebase, db } from "./firebase.config.js";
 import Firebase from "firebase";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
+
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   const [data0, setData0] = useState([]);
   const [childnum, setChildnum] = useState([]);
 
   useEffect(() => {
-    getCatsData();
+    async getCatsData();
+
+
   }, []);
 
   const getCatsData = () => {

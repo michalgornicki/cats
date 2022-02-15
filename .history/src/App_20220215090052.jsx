@@ -10,6 +10,7 @@ import Favourite from "./components/Favourite.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Cat from "./components/profiles/profile.jsx";
 import Firebase from "firebase";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
 

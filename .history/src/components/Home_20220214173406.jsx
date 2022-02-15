@@ -95,6 +95,8 @@ const Home = (props) => {
     });
   };
 
+  console.log(data1);
+  console.log(usernum);
 
   const writeData = () => {
     if (data1.filter(e => e.user === user.name).length < 1) {

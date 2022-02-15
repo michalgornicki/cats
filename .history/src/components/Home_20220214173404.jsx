@@ -42,6 +42,7 @@ const Home = (props) => {
     else {setRegion(e.target.value);}
   };
 
+
   const toggleAge = () => {
     const form2 = document.getElementById("form2");
     if (form2.value === "1") {
@@ -95,6 +96,8 @@ const Home = (props) => {
     });
   };
 
+  console.log(data1);
+  console.log(usernum);
 
   const writeData = () => {
     if (data1.filter(e => e.user === user.name).length < 1) {
