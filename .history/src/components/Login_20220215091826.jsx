@@ -7,7 +7,7 @@ const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
   const { logout } = useAuth0();
-  const {isAuthenticated} = useAuth0();
+  const {isAuthenticated, isLoading } = useAuth0();
 
   const Login = () => {
     loginWithRedirect();

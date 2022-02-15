@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Firebase from "firebase";
 import { useAuth0 } from "@auth0/auth0-react";
-import { storage } from "../firebase.config.js";
+import { Route, HashRouter as Router, Routes, useParams } from "react-router-dom";
+import { storage, firebase, db } from "../firebase.config.js";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
