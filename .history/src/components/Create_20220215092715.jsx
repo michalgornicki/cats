@@ -113,7 +113,7 @@ const Create = (childnum) => {
 
           <form className="d-flex flex-column w-25">
             <label for="color">Kolor sierści</label>
-            <select id="color" name="color" >
+            <select id="color" name="color" onChange={() => console.log(document.getElementById("color").value)}>
               <option value="szary">Szary</option>
               <option value="czarny">Czarny</option>
               <option value="biały">Biały</option>
@@ -124,22 +124,22 @@ const Create = (childnum) => {
 
           <div className="d-flex flex-column">
             <label for="fname">Podaj swój kontaktowy numer telefonu</label>
-            <textarea  className="w-100 text-wrap" type="text" id="phone" name="firstname" placeholder="numer telefonu.." />
+            <textarea onChange={() => console.log(document.getElementById("phone").value)} className="w-100 text-wrap" type="text" id="phone" name="firstname" placeholder="numer telefonu.." />
           </div>
 
           <div className="d-flex flex-column">
             <label for="fname">Podaj województwo</label>
-            <textarea  className="w-100 text-wrap" type="text" id="region" name="firstname" placeholder="Wpisz województwo.." />
+            <textarea onChange={() => console.log(document.getElementById("region").value)} className="w-100 text-wrap" type="text" id="region" name="firstname" placeholder="Wpisz województwo.." />
           </div>
 
           <div className="d-flex flex-column">
             <label for="fname">Podaj miasto</label>
-            <textarea  className="w-100 text-wrap" type="text" id="city" name="firstname" placeholder="Wpisz miasto.." />
+            <textarea onChange={() => console.log(document.getElementById("city").value)} className="w-100 text-wrap" type="text" id="city" name="firstname" placeholder="Wpisz miasto.." />
           </div>
 
           <div className="d-flex flex-column">
             <label for="fname">Stwórz krótki opis kota</label>
-            <textarea  className="w-100 height-20vh text-wrap" type="text" id="description" name="firstname" placeholder="Napisz historię kota.." />
+            <textarea onChange={() => console.log(document.getElementById("description").value)} className="w-100 height-20vh text-wrap" type="text" id="description" name="firstname" placeholder="Napisz historię kota.." />
           </div>
         </Card.Body>
         <Button onClick={writeData} className="my-3 w-50" variant="success">

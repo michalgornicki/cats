@@ -19,6 +19,8 @@ const Database = (props) => {
     e.target.checked ? setSex(e.target.value) : setSex([]);
   };
 
+  console.log(props.data0.map((item) => item));
+
   return (
     <div className="position-relative d-flex flex-column flex-lg-row ">
       <Container className="checkboxes w-sm-100">

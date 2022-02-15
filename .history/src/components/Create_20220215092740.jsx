@@ -139,7 +139,7 @@ const Create = (childnum) => {
 
           <div className="d-flex flex-column">
             <label for="fname">Stwórz krótki opis kota</label>
-            <textarea  className="w-100 height-20vh text-wrap" type="text" id="description" name="firstname" placeholder="Napisz historię kota.." />
+            <textarea onChange={() => console.log(document.getElementById("description").value)} className="w-100 height-20vh text-wrap" type="text" id="description" name="firstname" placeholder="Napisz historię kota.." />
           </div>
         </Card.Body>
         <Button onClick={writeData} className="my-3 w-50" variant="success">
