@@ -39,7 +39,7 @@ const App = () => {
           <Route path="/Create" element={<Create data={catsData} childnum={childnum} />} />
           <Route path="/Dashboard" element={<Dashboard data={catsData} />} />
           <Route path="/Favourite" element={<Favourite data={catsData} />} />
-          <Route path="/profiles/:id" element={<Cat data={catsData} />} />
+          <Route path="/profiles/:id" element={<Cat data0={catsData} />} />
 
         </Routes>
       </div>

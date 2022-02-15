@@ -5,7 +5,24 @@ import fav from "../heart.png";
 import { Link } from "react-router-dom";
 
 const Database = (props) => {
-  const regions = ["Dolnośląskie", "Kujawsko-pomorskie", "Lubelskie", "Lubuskie", "Łódzkie", "Małopolskie", "Mazowieckie", "Opolskie", "Podkarpackie", "Podlaskie", "Pomorskie", "Śląskie", "Świętokrzyskie", "Warmińsko-mazurskie", "Wielkopolskie", "Zachodniopomorskie"];
+  const regions = [
+    "Dolnośląskie",
+    "Kujawsko-pomorskie",
+    "Lubelskie",
+    "Lubuskie",
+    "Łódzkie",
+    "Małopolskie",
+    "Mazowieckie",
+    "Opolskie",
+    "Podkarpackie",
+    "Podlaskie",
+    "Pomorskie",
+    "Śląskie",
+    "Świętokrzyskie",
+    "Warmińsko-mazurskie",
+    "Wielkopolskie",
+    "Zachodniopomorskie",
+  ];
 
   const [Region, setRegion] = useState(regions);
   const [Sex, setSex] = useState(["kotek", "kotka"]);
